@@ -6,3 +6,9 @@ enum game_state {
 	Dungeon
 }
 
+enum face_direction {
+	Up = 0,
+	Down = 2,
+	Left = 3,
+	Right = 1
+}
