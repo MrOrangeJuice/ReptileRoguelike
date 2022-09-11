@@ -3,4 +3,4 @@
 
 facing = face_direction.Up
 
-
+show_message("Hold shift to face without moving; WASD");
