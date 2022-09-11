@@ -2,14 +2,15 @@
 // You can write your code in this editor
 
 
-
+//begninning movement code
 if(Object_Game_Manager.gameState == game_state.Dungeon)
 {
 	
-	
+	//move in direction pressed after facing it, up down left or right
 	if(keyboard_check_pressed(ord("A")))
 	{
 		facing = face_direction.Left;
+		//if ever holding shift, don't do the move
 		if(!instance_position(x-16,y,Object_Wall) && !keyboard_check(vk_shift))
 		{
 			x -= 16;
@@ -42,15 +43,6 @@ if(Object_Game_Manager.gameState == game_state.Dungeon)
 		}
 	}
 	
-	/*
-	switch(facing)
-	{
-		case(face_direction.Up):
-			Sprite_Player.image_index = 0;
-		break;
-		case(face_direction.Right):
-			Sprite_Player.image_index = 1;
-		break;
-	} */
+	//animate the player to face the direction
 	Object_Player.image_index = facing;
 }
