@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Persistant",
-    "path": "folders/Objects/Persistant.yy",
+    "name": "Persistent",
+    "path": "folders/Objects/Persistent.yy",
   },
 }
