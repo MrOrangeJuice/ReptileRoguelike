@@ -3,7 +3,17 @@
   "resourceVersion": "1.6",
   "name": "AmphibiSquadron",
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"Sprite_Wall","path":"sprites/Sprite_Wall/Sprite_Wall.yy",},"order":4,},
+    {"id":{"name":"Object_Floor","path":"objects/Object_Floor/Object_Floor.yy",},"order":3,},
+    {"id":{"name":"Object_Enemy","path":"objects/Object_Enemy/Object_Enemy.yy",},"order":2,},
+    {"id":{"name":"Sprite_Player","path":"sprites/Sprite_Player/Sprite_Player.yy",},"order":3,},
+    {"id":{"name":"Sprite_Party_Member","path":"sprites/Sprite_Party_Member/Sprite_Party_Member.yy",},"order":2,},
+    {"id":{"name":"Object_Player","path":"objects/Object_Player/Object_Player.yy",},"order":0,},
+    {"id":{"name":"Sprite_Enemy","path":"sprites/Sprite_Enemy/Sprite_Enemy.yy",},"order":0,},
+    {"id":{"name":"Object_Party_Member","path":"objects/Object_Party_Member/Object_Party_Member.yy",},"order":1,},
+    {"id":{"name":"Sprite_Floor","path":"sprites/Sprite_Floor/Sprite_Floor.yy",},"order":1,},
+    {"id":{"name":"Object_Wall","path":"objects/Object_Wall/Object_Wall.yy",},"order":4,},
+    {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -19,7 +29,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":1,},
