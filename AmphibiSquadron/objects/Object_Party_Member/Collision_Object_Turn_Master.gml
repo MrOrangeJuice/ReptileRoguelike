@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-show_message("Yahoo");
+show_message("Party_Member Turn");
 
 //dont repeat turn
 undoubleTurn();
