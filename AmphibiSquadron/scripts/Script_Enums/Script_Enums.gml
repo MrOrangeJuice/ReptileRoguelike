@@ -31,3 +31,15 @@ enum face_direction {
 	DownLeft = 6,
 	DownRight = 7
 }
+
+enum movementDirection {
+Left = 3,
+Right = -4,
+Up = -5,
+Down = 1,
+upLeft = -2,
+upRight = -9,
+downLeft = 4,
+downRight = -3
+	
+}
