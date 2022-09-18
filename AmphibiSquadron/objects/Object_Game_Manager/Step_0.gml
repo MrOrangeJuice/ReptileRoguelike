@@ -10,8 +10,6 @@ switch(gameState){
 		turnMaster.x = turnOrder[| currentTurnIndex].x;
 		turnMaster.y = turnOrder[| currentTurnIndex].y;
 		
-		
-		
 		break;
 	case(game_state.NextTurn):
 		//go to next turn

@@ -6,10 +6,24 @@
 
 //attempt to not double call the turn
 undoubleTurn();
-	
-	//move in direction pressed after facing it, up down left or right
-	if(keyboard_check_pressed(ord("A")))
+
+//what keys is the player pressing?
+keyLeft = keyboard_check_pressed(ord("A"));
+keyRight = keyboard_check_pressed(ord("D"));
+keyUp = keyboard_check_pressed(ord("W"));
+keyDown = keyboard_check_pressed(ord("D"));
+keyLook = keyboard_check_pressed(ord(vk_shift));
+
+leftRight = keyLeft - KeyRight;
+upDown = keyDown - keyUp;
+
+
+
+	//move in direction pressed after facing it, up down left or right, diagonals,
+	// and dont move if holding shift, just look
+	if(keyLeft)
 	{
+		
 		facing = face_direction.Left;
 		//if ever holding shift, don't do the move
 		if(!instance_position(x-16,y,Object_Wall) && !keyboard_check(vk_shift))
