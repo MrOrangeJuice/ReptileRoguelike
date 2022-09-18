@@ -114,8 +114,6 @@ switch(finalDirection){
 			Object_Game_Manager.gameState = game_state.NextTurn;
 		}
 		break;
-		
-		
 }
 
 	
