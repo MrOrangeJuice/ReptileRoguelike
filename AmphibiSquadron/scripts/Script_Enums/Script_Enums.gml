@@ -21,6 +21,7 @@ enum game_state {
 	Transition
 }
 
+//used to animate sprites
 enum face_direction {
 	Up = 0,
 	Down = 2,
@@ -32,6 +33,7 @@ enum face_direction {
 	DownRight = 7
 }
 
+//used for player movement
 enum movementDirection {
 Left = 3,
 Right = -4,
@@ -42,4 +44,10 @@ upRight = -9,
 downLeft = 4,
 downRight = -3
 	
+}
+
+//used when party members take a turn
+enum partyActions{
+	Move = 0,
+	Attack = 1
 }

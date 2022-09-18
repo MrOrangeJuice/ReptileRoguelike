@@ -10,3 +10,8 @@ function undoubleTurn(){
 		Object_Game_Manager.turnMaster.x = 0;
 		Object_Game_Manager.turnMaster.y = 0;
 }
+
+//check to make sure a move is valid for an entity before it moves
+function checkMove(mover, xTarget, yTarget){
+	
+}

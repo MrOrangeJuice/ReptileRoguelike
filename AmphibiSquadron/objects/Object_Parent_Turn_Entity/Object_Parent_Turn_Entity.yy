@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Dungeon Entities",
-    "path": "folders/Objects/Dungeon Entities.yy",
+    "name": "Parents",
+    "path": "folders/Objects/Parents.yy",
   },
 }
