@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(!window_has_focus())
+{
+	gameState = game_state.Pause;
+}
 
 //only run the right code for the current part of the game loop
 switch(gameState){
@@ -20,6 +24,12 @@ switch(gameState){
 			currentTurnIndex = 0;
 		}
 		gameState = game_state.Turn;
+		break;
+	case(game_state.Pause):
+		if(window_has_focus())
+		{
+			gameState = game_state.Turn;
+		}
 		break;
 }
 
