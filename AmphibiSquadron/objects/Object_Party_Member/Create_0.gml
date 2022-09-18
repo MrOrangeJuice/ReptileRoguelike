@@ -3,7 +3,7 @@
 
 
 //add ourselves to the turn order, but after the player
-
+ds_list_insert(Object_Game_Manager.turnOrder, 1, self.id);
 
 
 

@@ -2,10 +2,17 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 enum game_state {
+	//a menu is open
 	Menu,
-	Dungeon,
+	//someone is taking a turn
+	Turn,
+	//it is okay to go to the next turn
+	NextTurn,
+	//game is pause
 	Pause,
+	//mainMenu
 	MainMenu,
+	//in case we need it for a screen transition
 	Transition
 }
 
