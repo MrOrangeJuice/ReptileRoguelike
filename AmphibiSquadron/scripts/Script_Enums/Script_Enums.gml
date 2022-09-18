@@ -49,5 +49,6 @@ downRight = -3
 //used when party members take a turn
 enum partyActions{
 	Move = 0,
-	Attack = 1
+	Attack = 1,
+	Idle = 2
 }
