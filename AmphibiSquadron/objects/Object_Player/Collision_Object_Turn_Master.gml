@@ -20,6 +20,9 @@ upDown = (keyDown) - (keyUp * 5);
 
 finalDirection = leftRight + upDown;
 
+xTarget = x;
+yTarget = y;
+
 //math bangs out to 8 results
 //left = 3
 //right = -4
@@ -41,7 +44,7 @@ switch(finalDirection){
 		//if ever holding shift, don't do the move
 		if(!instance_position(x-16,y,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
-			x -= 16;
+			xTarget -= 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
 		}
 		break;
@@ -50,7 +53,7 @@ switch(finalDirection){
 		facing = face_direction.Right;
 		if(!instance_position(x+16,y,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
-			x += 16;
+			xTarget += 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
 		}
 		break;	
@@ -59,7 +62,7 @@ switch(finalDirection){
 		facing = face_direction.Up;
 		if(!instance_position(x,y-16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
-			y -= 16;
+			yTarget -= 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
 		}
 		break;
@@ -68,7 +71,7 @@ switch(finalDirection){
 		facing = face_direction.Down;
 		if(!instance_position(x,y+16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
-			y += 16;
+			yTarget += 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
 		}
 		break;
@@ -78,8 +81,8 @@ switch(finalDirection){
 		facing = face_direction.UpLeft;
 		if(!instance_position(x-16,y-16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
-			x -= 16;
-			y -= 16;
+			xTarget -= 16;
+			yTarget -= 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
 		}
 		break;
@@ -88,8 +91,8 @@ switch(finalDirection){
 		facing = face_direction.UpRight;
 		if(!instance_position(x+16,y-16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
-			x += 16;
-			y -= 16;
+			xTarget += 16;
+			yTarget -= 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
 		}
 		break;
@@ -98,8 +101,8 @@ switch(finalDirection){
 		facing = face_direction.DownLeft;
 		if(!instance_position(x-16,y+16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
-			x -= 16;
-			y += 16;
+			xTarget -= 16;
+			yTarget += 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
 		}
 		break;
@@ -108,12 +111,32 @@ switch(finalDirection){
 		facing = face_direction.DownRight;
 		if(!instance_position(x+16,y+16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
-			x += 16;
-			y += 16;
+			xTarget += 16;
+			yTarget += 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
 		}
 		break;
 }
+
+	//check to see if we can move to where we want
+	canMove = checkMove(self.id,xTarget,yTarget);
+	switch(canMove)
+	{
+		case(moveCheckResult.Bad):
+			//move is not allowed, do not take turn 
+			xTarget = x;
+			yTarget = y;
+			Object_Game_Manager.gameState = game_state.Turn;
+			break;
+		case(moveCheckResult.Good):
+			//move is  allowed, take turn
+			
+			x = xTarget;
+			y = yTarget;
+			
+			break;
+		
+	}
 
 	
 	//animate the player to face the direction

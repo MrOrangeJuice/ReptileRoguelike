@@ -52,3 +52,9 @@ enum partyActions{
 	Attack = 1,
 	Idle = 2
 }
+
+enum moveCheckResult{
+	Good = 0,
+	Bad = 1,
+	Swap = 2
+}

@@ -13,5 +13,22 @@ function undoubleTurn(){
 
 //check to make sure a move is valid for an entity before it moves
 function checkMove(mover, xTarget, yTarget){
+	//walls are no move
+	if(place_meeting(xTarget,yTarget,Object_Wall))
+	{	
+		return moveCheckResult.Bad;
+	}
+	//floors are okay
+	if(place_meeting(xTarget,yTarget,Object_Floor))
+	{	
+		return moveCheckResult.Good;
+	}
+	//allies are swap
+	if(place_meeting(xTarget,yTarget,Object_Party_Member))
+	{	
+		return moveCheckResult.Swap;
+	}
 	
+	//unknown? bad.
+	return moveCheckResult.Bad;
 }
