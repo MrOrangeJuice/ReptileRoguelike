@@ -1,20 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object_Enemy",
-  "spriteId": {
-    "name": "Sprite_Enemy",
-    "path": "sprites/Sprite_Enemy/Sprite_Enemy.yy",
-  },
+  "name": "Object_Parent_Turn_Entity",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Object_Parent_Turn_Entity",
-    "path": "objects/Object_Parent_Turn_Entity/Object_Parent_Turn_Entity.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,7 +21,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Object_Turn_Master","path":"objects/Object_Turn_Master/Object_Turn_Master.yy",},},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Object_Parent_Turn_Entity",
+    "path": "objects/Object_Parent_Turn_Entity/Object_Parent_Turn_Entity.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

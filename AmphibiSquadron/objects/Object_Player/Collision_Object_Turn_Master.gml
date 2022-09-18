@@ -5,15 +5,14 @@
 // You can write your code in this editor
 
 //attempt to not double call the turn
-undoubleTurn();
+event_inherited();
 
 //what keys is the player pressing?
 keyLeft = keyboard_check_direct(ord("A"));
 keyRight = keyboard_check_direct(ord("D"));
 keyUp = keyboard_check_direct(ord("W"));
 keyDown = keyboard_check_direct(ord("S"));
-//prevents movement if held but faces direction
-keyLook = keyboard_check_direct(ord(vk_shift));
+
 
 //what direction are we looking
 leftRight = (keyLeft * 3) - (keyRight * 4);
@@ -40,7 +39,7 @@ switch(finalDirection){
 	case(movementDirection.Left):
 		facing = face_direction.Left;
 		//if ever holding shift, don't do the move
-		if(!instance_position(x-16,y,Object_Wall) && !keyboard_check(vk_shift))
+		if(!instance_position(x-16,y,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
 			x -= 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
@@ -49,7 +48,7 @@ switch(finalDirection){
 		
 	case(movementDirection.Right):
 		facing = face_direction.Right;
-		if(!instance_position(x+16,y,Object_Wall) && !keyboard_check(vk_shift))
+		if(!instance_position(x+16,y,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
 			x += 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
@@ -58,7 +57,7 @@ switch(finalDirection){
 		
 		case(movementDirection.Up):
 		facing = face_direction.Up;
-		if(!instance_position(x,y-16,Object_Wall) && !keyboard_check(vk_shift))
+		if(!instance_position(x,y-16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
 			y -= 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
@@ -67,7 +66,7 @@ switch(finalDirection){
 		
 		case(movementDirection.Down):
 		facing = face_direction.Down;
-		if(!instance_position(x,y+16,Object_Wall) && !keyboard_check(vk_shift))
+		if(!instance_position(x,y+16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
 			y += 16;
 			Object_Game_Manager.gameState = game_state.NextTurn;
@@ -77,7 +76,7 @@ switch(finalDirection){
 		//diagonals time
 		case(movementDirection.upLeft):
 		facing = face_direction.UpLeft;
-		if(!instance_position(x-16,y-16,Object_Wall) && !keyboard_check(vk_shift))
+		if(!instance_position(x-16,y-16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
 			x -= 16;
 			y -= 16;
@@ -87,7 +86,7 @@ switch(finalDirection){
 		
 		case(movementDirection.upRight):
 		facing = face_direction.UpRight;
-		if(!instance_position(x+16,y-16,Object_Wall) && !keyboard_check(vk_shift))
+		if(!instance_position(x+16,y-16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
 			x += 16;
 			y -= 16;
@@ -97,7 +96,7 @@ switch(finalDirection){
 		
 		case(movementDirection.downLeft):
 		facing = face_direction.DownLeft;
-		if(!instance_position(x-16,y+16,Object_Wall) && !keyboard_check(vk_shift))
+		if(!instance_position(x-16,y+16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
 			x -= 16;
 			y += 16;
@@ -107,7 +106,7 @@ switch(finalDirection){
 		
 		case(movementDirection.downRight):
 		facing = face_direction.DownRight;
-		if(!instance_position(x+16,y+16,Object_Wall) && !keyboard_check(vk_shift))
+		if(!instance_position(x+16,y+16,Object_Wall) && !keyboard_check_direct(vk_shift))
 		{
 			x += 16;
 			y += 16;
