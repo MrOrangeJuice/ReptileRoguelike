@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Script_Enums",
+  "name": "Script_Party_Functions",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

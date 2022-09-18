@@ -3,7 +3,7 @@
 
 
 //begninning movement code
-if(Object_Game_Manager.gameState == game_state.Dungeon)
+if(Object_Game_Manager.gameState == game_state.Dungeon && turn == true)
 {
 	
 	//move in direction pressed after facing it, up down left or right

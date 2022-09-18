@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object_Party_Member",
-  "spriteId": {
-    "name": "Sprite_Party_Member",
-    "path": "sprites/Sprite_Party_Member/Sprite_Party_Member.yy",
-  },
+  "name": "Object_Turn_Master",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -24,13 +21,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Dungeon Entities",
-    "path": "folders/Objects/Dungeon Entities.yy",
+    "name": "Persistent",
+    "path": "folders/Objects/Persistent.yy",
   },
 }

@@ -1,17 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function Script_Party_Functions(){
 
-enum game_state {
-	Menu,
-	Dungeon,
-	Pause,
-	MainMenu,
-	Transition
 }
 
-enum face_direction {
-	Up = 0,
-	Down = 2,
-	Left = 3,
-	Right = 1
-}

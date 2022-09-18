@@ -4,4 +4,6 @@
 
 gameState = game_state.Dungeon;
 
+//manage whose turn is what during dungeons
+turnOrder = ds_list_create();
 
