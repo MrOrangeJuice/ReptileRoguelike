@@ -18,15 +18,19 @@ function checkMove(mover, xTarget, yTarget){
 	{	
 		return moveCheckResult.Bad;
 	}
-	//floors are okay
-	if(place_meeting(xTarget,yTarget,Object_Floor))
+	//enemies are no move
+	else if(place_meeting(xTarget,yTarget,Object_Enemy))
 	{	
-		return moveCheckResult.Good;
+		return moveCheckResult.Bad;
 	}
 	//allies are swap
-	if(place_meeting(xTarget,yTarget,Object_Party_Member))
+	else if(place_meeting(xTarget,yTarget,Object_Party_Member))
 	{	
 		return moveCheckResult.Swap;
+	}
+	else
+	{
+		return moveCheckResult.Good;
 	}
 	
 	//unknown? bad.

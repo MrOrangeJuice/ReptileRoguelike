@@ -23,6 +23,8 @@ finalDirection = leftRight + upDown;
 xTarget = x;
 yTarget = y;
 
+canMove = noone;
+
 //math bangs out to 8 results
 //left = 3
 //right = -4
@@ -118,8 +120,13 @@ switch(finalDirection){
 		break;
 }
 
-	//check to see if we can move to where we want
-	canMove = checkMove(self.id,xTarget,yTarget);
+	//check to see if we can move to where we want, if moving
+	if(xTarget != x || yTarget != y)
+	{
+		canMove = checkMove(self.id,xTarget,yTarget);
+	}
+	
+	
 	switch(canMove)
 	{
 		case(moveCheckResult.Bad):
@@ -128,12 +135,29 @@ switch(finalDirection){
 			yTarget = y;
 			Object_Game_Manager.gameState = game_state.Turn;
 			break;
+			
 		case(moveCheckResult.Good):
 			//move is  allowed, take turn
+			x = xTarget;
+			y = yTarget;
+			break;
+			
+		case(moveCheckResult.Swap):
+			//move is  allowed, but have to swap places with ally
+			
+			//move ally
+			ally = instance_place(xTarget,yTarget,Object_Party_Member);
+			ally.x = x;
+			ally.y = y;
 			
 			x = xTarget;
 			y = yTarget;
+			break;
 			
+		//if we didn't move
+		default:
+			//it would still be our turn
+			Object_Game_Manager.gameState = game_state.Turn;
 			break;
 		
 	}
@@ -141,18 +165,3 @@ switch(finalDirection){
 	
 	//animate the player to face the direction
 	Object_Player.image_index = facing;
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
