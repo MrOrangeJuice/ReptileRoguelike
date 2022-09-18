@@ -21,9 +21,17 @@ function Determine_Party_Action(member){
 	
 	
 	//if an enemy is adjacent to us
-	if(abs(xDifferenceNearestEnemy) == 1 && abs(yDifferenceNearestEnemy) == 1)
+	if(abs(xDifferenceNearestEnemy) == 1 || abs(yDifferenceNearestEnemy) == 1)
 	{
-		return partyActions.Attack;	
+		if(abs(xDifferenceNearestEnemy) > 1 || abs(yDifferenceNearestEnemy) > 1)
+		{
+			//enemy is too far, not adjacent
+		}
+		else
+		{
+			//enemy is indeed adjacent
+			return partyActions.Attack;	
+		}
 	}
 	
 	//if not adjacent to an enemy, see if we move
