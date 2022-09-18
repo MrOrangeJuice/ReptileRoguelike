@@ -20,9 +20,10 @@ function Determine_Party_Action(member){
 	
 	
 	
-	//if an enemy is adjacent to us
+	//if an enemy is adjacent to us in row or column
 	if(abs(xDifferenceNearestEnemy) == 1 || abs(yDifferenceNearestEnemy) == 1)
 	{
+		//if the enemy is not adjacent in the other (row or column)
 		if(abs(xDifferenceNearestEnemy) > 1 || abs(yDifferenceNearestEnemy) > 1)
 		{
 			//enemy is too far, not adjacent
