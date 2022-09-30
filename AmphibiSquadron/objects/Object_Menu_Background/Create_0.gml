@@ -5,6 +5,8 @@
 width = 64;
 height = 104;
 
+op_selected = 0;
+
 //space between text and borders
 op_border = 8;
 //space between lines, measured from sprite origins

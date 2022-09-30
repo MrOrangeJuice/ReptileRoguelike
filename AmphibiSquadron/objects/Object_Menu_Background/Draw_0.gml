@@ -14,5 +14,14 @@ draw_set_halign(fa_left);
 
 for (var i = 0; i < op_length; i++)
 {
-	draw_text(x + op_border, y + op_border + (op_space * i), option[i]);
+	//local var, exists only for that loop iteration
+	var color = c_white;
+	
+	//used to highlight the currently selected menu option
+	if(op_selected == i)
+	{
+		color = c_yellow;
+	}
+	draw_text_color(x + op_border, y + op_border + (op_space * i), option[i], color, color, color, color, 1);
+	
 }
