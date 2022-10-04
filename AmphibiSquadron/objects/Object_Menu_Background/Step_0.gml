@@ -15,5 +15,5 @@ if(op_selected >= op_length)
 
 if(op_selected < 0)
 {
-	op_selected = op_length;
+	op_selected = op_length - 1;
 }
