@@ -164,4 +164,5 @@ switch(finalDirection){
 
 	
 	//animate the player to face the direction
-	Object_Player.image_index = facing;
+	//deprecated
+	//Object_Player.image_index = facing;

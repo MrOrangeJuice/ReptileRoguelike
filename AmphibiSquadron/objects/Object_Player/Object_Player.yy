@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Object_Player",
   "spriteId": {
-    "name": "Sprite_Player",
-    "path": "sprites/Sprite_Player/Sprite_Player.yy",
+    "name": "sCrocodileGreen",
+    "path": "sprites/sCrocodileGreen/sCrocodileGreen.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,6 @@
     {"x":0.0,"y":16.0,},
   ],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Object_Turn_Master","path":"objects/Object_Turn_Master/Object_Turn_Master.yy",},},
   ],
