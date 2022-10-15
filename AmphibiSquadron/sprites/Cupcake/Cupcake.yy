@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Dungeon Entities",
-    "path": "folders/Sprites/Dungeon Entities.yy",
+    "name": "Player_Unaligned",
+    "path": "folders/Sprites/Dungeon Entities/Player_Unaligned.yy",
   },
 }

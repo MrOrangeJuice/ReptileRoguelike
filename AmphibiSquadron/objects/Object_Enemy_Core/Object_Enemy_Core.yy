@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Object_Enemy_Core",
   "spriteId": {
-    "name": "Sprite_Enemy",
-    "path": "sprites/Sprite_Enemy/Sprite_Enemy.yy",
+    "name": "Cupcake",
+    "path": "sprites/Cupcake/Cupcake.yy",
   },
   "solid": false,
   "visible": true,

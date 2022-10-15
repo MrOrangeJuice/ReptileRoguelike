@@ -99,6 +99,6 @@
   },
   "parent": {
     "name": "Crocodile",
-    "path": "folders/Sprites/Dungeon Entities/Players/Crocodile.yy",
+    "path": "folders/Sprites/Dungeon Entities/Player_Alligned/Crocodile.yy",
   },
 }

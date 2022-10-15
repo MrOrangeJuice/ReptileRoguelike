@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Dungeon Entities",
-    "path": "folders/Sprites/Dungeon Entities.yy",
+    "name": "Legacy",
+    "path": "folders/Sprites/Legacy.yy",
   },
 }
