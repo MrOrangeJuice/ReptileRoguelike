@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sCrocodileGreen",
+  "name": "CrocodileWind",
   "bboxMode": 1,
   "collisionKind": 1,
   "type": 0,
@@ -36,7 +36,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sCrocodileGreen",
+    "name": "CrocodileWind",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 8.0,
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bf5b8cce-e941-4873-ad0d-0643056441aa","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ad50b09-04e8-415f-9ebf-ddec06aa3d25","path":"sprites/sCrocodileGreen/sCrocodileGreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"73b81dc0-e6e4-4018-8745-a8328f32707b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7cdd0a5c-9f59-4fa5-afd1-80e38a61bf4c","path":"sprites/sCrocodileGreen/sCrocodileGreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"8f0adffd-a75b-409b-8ffc-e6f33a660574","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1119e5b-73a8-4afa-9ffd-3db100e0ecd1","path":"sprites/sCrocodileGreen/sCrocodileGreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"5d6f1982-375b-4659-b903-4070a622c5ef","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ece9ea1-6be7-4104-81e8-72879e26db90","path":"sprites/sCrocodileGreen/sCrocodileGreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bf5b8cce-e941-4873-ad0d-0643056441aa","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ad50b09-04e8-415f-9ebf-ddec06aa3d25","path":"sprites/CrocodileWind/CrocodileWind.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"73b81dc0-e6e4-4018-8745-a8328f32707b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7cdd0a5c-9f59-4fa5-afd1-80e38a61bf4c","path":"sprites/CrocodileWind/CrocodileWind.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8f0adffd-a75b-409b-8ffc-e6f33a660574","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1119e5b-73a8-4afa-9ffd-3db100e0ecd1","path":"sprites/CrocodileWind/CrocodileWind.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5d6f1982-375b-4659-b903-4070a622c5ef","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ece9ea1-6be7-4104-81e8-72879e26db90","path":"sprites/CrocodileWind/CrocodileWind.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Crocodile",
-    "path": "folders/Sprites/Dungeon Entities/Player_Alligned/Crocodile.yy",
+    "name": "Wind",
+    "path": "folders/Sprites/Dungeon Entities/Player_Alligned/Crocodile/Wind.yy",
   },
 }
