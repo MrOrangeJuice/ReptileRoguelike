@@ -9,5 +9,5 @@ y = yTo;
 
 
 //set a default sprite
-sprite_index = sCrocodileGreen;
+sprite_index = CrocodileWind;
 
