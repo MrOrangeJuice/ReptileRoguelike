@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //draw background
-draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width, height / sprite_height, 0, c_white, .75);
+draw_sprite_ext(Sprite_Menu, 1, x, y, width / 16, height / 16, 0, c_white, 1);
 
 
 //draw options
@@ -22,6 +22,6 @@ for (var i = 0; i < op_length; i++)
 	{
 		color = c_yellow;
 	}
-	draw_text_color(x + op_border, y + op_border + (op_space * i), option[i], color, color, color, color, 1);
+	draw_text_color(x + op_border + 16, y + op_border - 8 + (op_space * i), option[i], color, color, color, color, 1);
 	
 }

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Object_Player_Core",
   "spriteId": {
-    "name": "Sprite_Player_Collider",
-    "path": "sprites/Sprite_Player_Collider/Sprite_Player_Collider.yy",
+    "name": "Sprite_Collider_16x16",
+    "path": "sprites/Sprite_Collider_16x16/Sprite_Collider_16x16.yy",
   },
   "solid": false,
   "visible": true,

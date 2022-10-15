@@ -146,7 +146,7 @@ switch(finalDirection){
 			//move is  allowed, but have to swap places with ally
 			
 			//move ally
-			ally = instance_place(xTarget,yTarget,Object_Party_Member);
+			ally = instance_place(xTarget,yTarget,Object_Party_Member_Core);
 			ally.x = x;
 			ally.y = y;
 			
