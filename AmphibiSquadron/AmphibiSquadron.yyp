@@ -65,7 +65,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dungeon Tiles","folderPath":"folders/Objects/Dungeon Tiles.yy","order":10,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Legacy","folderPath":"folders/Objects/Legacy.yy","order":11,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menu Objects","folderPath":"folders/Objects/Menu Objects.yy","order":13,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parents","folderPath":"folders/Objects/Parents.yy","order":12,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parents","folderPath":"folders/Objects/Dungeon Entities/Parents.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Persistent","folderPath":"folders/Objects/Persistent.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy","order":10,},

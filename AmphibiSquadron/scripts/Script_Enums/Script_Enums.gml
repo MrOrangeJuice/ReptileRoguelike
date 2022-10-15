@@ -22,6 +22,9 @@ enum game_state {
 }
 
 //used to animate sprites
+//the numbers match a math section of code in the player core & its sprite, if you
+	//want to reference why they seem arbitray (they kinda are)
+		//this one is currently a bit deprecated cause of new sprites
 enum face_direction {
 	Up = 0,
 	Down = 2,
@@ -34,6 +37,7 @@ enum face_direction {
 }
 
 //used for player movement
+	//again, arbitrary to some math, in player core
 enum movementDirection {
 Left = 3,
 Right = -4,
@@ -57,4 +61,14 @@ enum moveCheckResult{
 	Good = 0,
 	Bad = 1,
 	Swap = 2
+}
+
+enum elementalType{
+	Fire = 0,
+	Ice = 1,
+	Poison = 2,
+	Electric = 3,
+	Wind = 4,
+	Null = 5
+	
 }
