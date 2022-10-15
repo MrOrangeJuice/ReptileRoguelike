@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object_Party_Member",
+  "name": "Object_Party_Member_Core",
   "spriteId": {
     "name": "Sprite_Party_Member",
     "path": "sprites/Sprite_Party_Member/Sprite_Party_Member.yy",
@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Dungeon Entities",
-    "path": "folders/Objects/Dungeon Entities.yy",
+    "name": "Party_Members",
+    "path": "folders/Objects/Dungeon Entities/Player_Alligned/Party_Members.yy",
   },
 }

@@ -9,7 +9,7 @@ function Determine_Party_Action(member){
 	
 	//2 main people to worry about when deciding
 	player = Object_Player_Core.id;
-	nearestEnemy = instance_nearest(x,y,Object_Enemy);
+	nearestEnemy = instance_nearest(x,y,Object_Enemy_Core);
 	
 	//distance in tiles
 	xDifferencePlayer = (player.x - member.x) / 16;

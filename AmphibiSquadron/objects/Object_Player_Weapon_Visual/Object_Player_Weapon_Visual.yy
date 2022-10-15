@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "MainCharacter",
-    "path": "folders/Objects/Dungeon Entities/PlayerControlled/MainCharacter.yy",
+    "path": "folders/Objects/Dungeon Entities/Player_Alligned/MainCharacter.yy",
   },
 }

@@ -19,12 +19,12 @@ function checkMove(mover, xTarget, yTarget){
 		return moveCheckResult.Bad;
 	}
 	//enemies are no move
-	else if(place_meeting(xTarget,yTarget,Object_Enemy))
+	else if(place_meeting(xTarget,yTarget,Object_Enemy_Core))
 	{	
 		return moveCheckResult.Bad;
 	}
 	//allies are swap
-	else if(place_meeting(xTarget,yTarget,Object_Party_Member))
+	else if(place_meeting(xTarget,yTarget,Object_Party_Member_Core))
 	{	
 		return moveCheckResult.Swap;
 	}

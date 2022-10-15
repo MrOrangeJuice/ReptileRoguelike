@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object_Enemy",
+  "name": "Object_Enemy_Core",
   "spriteId": {
     "name": "Sprite_Enemy",
     "path": "sprites/Sprite_Enemy/Sprite_Enemy.yy",
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Dungeon Entities",
-    "path": "folders/Objects/Dungeon Entities.yy",
+    "name": "Player_Unaligned",
+    "path": "folders/Objects/Dungeon Entities/Player_Unaligned.yy",
   },
 }
