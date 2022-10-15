@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Object_Player_Main_Visual",
-  "spriteId": {
-    "name": "sCrocodileGreen",
-    "path": "sprites/sCrocodileGreen/sCrocodileGreen.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

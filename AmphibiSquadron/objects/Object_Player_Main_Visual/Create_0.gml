@@ -8,5 +8,6 @@ x = xTo;
 y = yTo;
 
 
-
+//set a default sprite
+sprite_index = sCrocodileGreen;
 

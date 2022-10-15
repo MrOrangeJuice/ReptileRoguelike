@@ -163,6 +163,26 @@ switch(finalDirection){
 	}
 
 	
-	//animate the player to face the direction
-	//deprecated
-	//Object_Player.image_index = facing;
+	//animate the player to face the direction,
+		//make sure weapon is on correct side
+	switch(facing){
+		case(face_direction.Up):
+			Object_Player_Main_Visual.sprite_index = CrocodileBack;
+			Object_Player_Weapon_Visual.depth = 201;
+			break;
+		case(face_direction.Down):
+			Object_Player_Main_Visual.sprite_index = CrocodileFront;
+			Object_Player_Weapon_Visual.depth = 199;
+			break;
+		case(face_direction.Right):
+			Object_Player_Main_Visual.sprite_index = sCrocodileGreen;
+			Object_Player_Weapon_Visual.depth = 199;
+			break;
+		case(face_direction.Left):
+			Object_Player_Main_Visual.sprite_index = sCrocodileGreenFlipped;
+			Object_Player_Weapon_Visual.depth = 199;
+			break;
+		
+	}
+	
+	
