@@ -8,7 +8,7 @@ function Script_Party_Functions(){
 function Determine_Party_Action(member){
 	
 	//2 main people to worry about when deciding
-	player = Object_Player.id;
+	player = Object_Player_Core.id;
 	nearestEnemy = instance_nearest(x,y,Object_Enemy);
 	
 	//distance in tiles
@@ -62,7 +62,7 @@ function Determine_Party_Action(member){
 
 function moveToPlayer(member){
 	//get where the player is
-	player = Object_Player.id;
+	player = Object_Player_Core.id;
 	
 	//distance in tiles
 	xDifferencePlayer = (player.x - member.x) / 16;
