@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Object_Player_Weapon_Visual",
   "spriteId": {
-    "name": "sKatanaGreen",
-    "path": "sprites/sKatanaGreen/sKatanaGreen.yy",
+    "name": "sKatanaWind",
+    "path": "sprites/sKatanaWind/sKatanaWind.yy",
   },
   "solid": false,
   "visible": true,
